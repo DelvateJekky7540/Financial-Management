@@ -26,7 +26,7 @@ class CategoryInfolist
                     ->placeholder('-'),
                 TextEntry::make('deleted_at')
                     ->dateTime()
-                    ->visible(fn (Category $record): bool => $record->trashed()),
+                    // ->visible(fn (Category $record): bool => $record->trashed()),
             ]);
     }
 }
